@@ -1,3 +1,4 @@
-#### Footer col 3
+#### Annat bra att ha-länkar
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+[Chatten](https://gitter.im/dbwebb-se/design) ||
+[Github](https://github.com/)

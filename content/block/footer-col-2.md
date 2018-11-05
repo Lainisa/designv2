@@ -1,3 +1,7 @@
-#### Footer col 2
+#### Specifikationer
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+[HTML](https://www.w3.org/TR/html/)
+||
+[CSS](https://www.w3.org/TR/CSS/)
+||
+[Cheatsheet](https://www.w3.org/2009/cheatsheet/)
