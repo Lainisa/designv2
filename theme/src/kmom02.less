@@ -1,0 +1,62 @@
+/*!
+* LESS version of the stylesheet for design kmom02.
+*
+* This stylesheet is for the design course and kmom02.
+*/
+
+/**
+* clearfix
+*/
+@import "mixin/clearfix.less";
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+@import "base/base2.less";
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+//here you put all stuff thats layout as margins, display, box-sizing and so on
+@import "layout/layout2.less";
+@import "module/toc.less";
+@import "module/block.less";
+@import "module/figures.less";
+@import "module/logo.less";
+@import "module/navbar.less";
+@import "module/stylechooser.less";
+@import "module/byline.less";
+@import "module/footer.less";
+
+//set layout on responsiv
+@import "layout/responsive.less";
+
+/**
+* A responsive menu.
+*/
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//comment this one out, and put your choise in layout/responsive for now
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+* My own settings, not currently in their own module.
+*/
+//tor try for run over the sat colors in the basefile and layout
+@bgColorBody: lighten(#637f3c, 90%);
+@colorBody: #333;
+@dottedBorder: 1px dotted #333;
+@contrastBg: lighten(#637f3c, 10%);
+@accentTextColor: darken(#637f3c, 20%);
