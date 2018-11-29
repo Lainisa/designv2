@@ -21,7 +21,7 @@ Allting har alltid varit lite roligare och mer intressant när det inte har fung
 
 Så man börjar programmera. Man tänker: det är så här jag vill att det ska fungera, och sen sätter man igång. Sen blir det lite som att skapa sina problem och lösa de samtidigt. Det är ju ganska perfekt, för en som gillar att lösa problem! Så man kodar, man läser på om vad som gäller, man kodar lite till och vrider och vänder på varenda funktion man har tills dess att man inte orkar mer. Antingen fungerar det då, eller först vid nästa projekt om situationen dyker upp igen.
 
-[FIGURE src="image/njupeskar.jpg?w=100" class="left" alt="Njupeskär vattenfall" caption="Njupeskär hösten 2017"]
+[FIGURE src="image/bexellstenarSkog.jpg?w=100" class="left" alt="Bokskog" caption="Bokskog i Rolfstorp"]
 
 Då jag inte hänger vid datorn så är det sudoku, vandring och smyckestillverkning som gäller. Eftersom jag lever i Kläppen (Sälen) under vintern och Orust under sommaren så finns det mycket natur att njuta av.
 

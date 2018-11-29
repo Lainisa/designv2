@@ -1,0 +1,106 @@
+/*!
+* LESS version of the stylesheet for design kmom03.
+*
+* This stylesheet is for the design course and kmom03.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Catamaran');
+
+/**
+* clearfix
+*/
+@import "mixin/clearfix.less";
+
+/**
+* Normalize and reset the style.
+*/
+@import "normalize.css/normalize.less";
+
+/**
+* Font Awesome.
+*/
+@import "@fortawesome/fontawesome-free/less/fontawesome.less";
+@import "@fortawesome/fontawesome-free/less/solid.less";
+@import "@fortawesome/fontawesome-free/less/brands.less";
+
+/**
+ * Import the typographic grid.
+ */
+@import "@desinax/typographic-grid/less/typography-font-families.less";
+@import "@desinax/typographic-grid/less/typography-defaults.less";
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+/**
+ * Import the vertical grid.
+ */
+@import "@desinax/vertical-grid/less/grid.less";
+@import "layout/vgrid.less";
+
+
+/**
+* Base style to affect HTML elements on a general scale.
+*/
+
+@import "base/base3.less";
+
+
+/**
+* Layout style for general structure of header, navbar, main, footer
+* and other regions of the page including route specific styles.
+*/
+
+@import "layout/layout3.less";
+
+@import "module/figures3.less";
+
+@import "module/breadcrumb3.less";
+@import "module/stylechooser.less";
+@import "module/flashImg.less";
+@import "module/byline3.less";
+
+//set layout on responsiv
+@import "layout/responsive3.less";
+
+/**
+* A responsive menu.
+*/
+@import "@desinax/responsive-menu/less/responsive-menu.less";
+//comment this one out, and put your choise in layout/responsive for now
+//@import "@desinax/responsive-menu/less/media-queries.less";
+
+/**
+* My own settings, not currently in their own module.
+*/
+//run over the sat colors in the basefile and layout
+
+@bgColorBody: #fff;
+@colorBody: #333;
+@dottedBorder: 1px dotted #333;
+@contrastBg: lighten(#637f3c, 10%);
+@accentTextColor: darken(#637f3c, 20%);
+
+@bgColorCodeInline: lighten(@contrastBg, 28%);
+@borderColorCodeInline: @accentTextColor;
+
+
+// Magic number and base fontsize
+//found in body in base3-file
+@magicNumber:  24px;
+@fontSizeBody: 18px;
+
+
+// Default grid, change to fit your requirements.
+@columnWidth:   30;
+@gutterWidth:   10;
+@columns:       24;
+@gridType:      "float"; // "flex"
+
+
+// Set font family to use
+@fontFamilyHeadings: "Ubuntu", @fontFamilyHelvetica;
+@fontFamilyBody: "Catamaran", @fontFamilyCalibri;
+@fontFamilyCode: @fontFamilyCourier;

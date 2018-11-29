@@ -397,6 +397,11 @@ figcaption {
 /**
  * Layout for responsive style through media queries.
  */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
 @media screen and (min-width: 680px) and (max-width: 1020px) {
   div.region-header-col-2 a {
     padding: 0.4em;

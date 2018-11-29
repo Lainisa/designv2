@@ -4438,7 +4438,7 @@ code {
   content: " » ";
 }
 /**
-* Style for the yoc table of content? lists mostly
+* Style for the toc table of content? lists mostly
 */
 .toc ul {
   list-style: none;
@@ -4584,6 +4584,11 @@ figcaption p {
 /**
  * Layout for responsive style through media queries.
  */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
 @media screen and (min-width: 680px) and (max-width: 1020px) {
   div.region-header-col-2 a {
     padding: 0.4em;
