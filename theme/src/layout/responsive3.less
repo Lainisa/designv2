@@ -8,9 +8,14 @@
      }
  }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
     .site-logo-text {
         font-size: @fontSizeBody - 2;
+    }
+
+    //smaller padding in menue
+    .region-header-col-2 > div > ul > li > a {
+            padding: 0.7em;
     }
 
     .region-main {
@@ -42,6 +47,14 @@
         #desinax-vgrid.column(@columns);
     }
 }
+
+@media screen and (max-width: 903px) {
+    //smaller padding in menue
+    .region-header-col-2 > div > ul > li > a {
+            padding: 0.5em;
+    }
+}
+
 
 @media screen and (max-width: 880px) {
 
@@ -94,7 +107,7 @@
     }
 }
 
-@media screen and (max-width: 693px) {
+@media screen and (max-width: 746px) {
     .site-logo-text {
         font-size: @fontSizeBody - 3;
     }

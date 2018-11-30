@@ -4991,9 +4991,12 @@ figcaption p {
     display: none;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1020px) {
   .site-logo-text {
     font-size: 16px;
+  }
+  .region-header-col-2 > div > ul > li > a {
+    padding: 0.7em;
   }
   .region-main {
     display: inline;
@@ -5034,6 +5037,11 @@ figcaption p {
     width: 98.95833333%;
     margin-left: 0.52083333%;
     margin-right: 0.52083333%;
+  }
+}
+@media screen and (max-width: 903px) {
+  .region-header-col-2 > div > ul > li > a {
+    padding: 0.5em;
   }
 }
 @media screen and (max-width: 880px) {
@@ -5106,7 +5114,7 @@ figcaption p {
     margin-left: 0.52083333%;
   }
 }
-@media screen and (max-width: 693px) {
+@media screen and (max-width: 746px) {
   .site-logo-text {
     font-size: 15px;
   }
