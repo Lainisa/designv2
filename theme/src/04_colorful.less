@@ -1,0 +1,87 @@
+    /*!
+* LESS version of the colorful theme stylesheet for design kmom04.
+*
+* This stylesheet is for the design course and kmom04.
+*/
+@import url('https://fonts.googleapis.com/css?family=Overlock|Barlow');
+@import "kmom04.less";
+
+
+@color1: #8E5ECD;
+@color2: #4BCD6D;
+@color3: #CC9449;
+
+h1 {
+    #design-mixin.linearGradient(@colorBackground, @color3, 90deg);
+}
+
+.rm-button-face-1 {
+    background-color: @colorBackground;
+}
+
+.region-flash img {
+    -webkit-filter: blur(3px) hue-rotate(90deg);
+    filter: blur(3px) hue-rotate(90deg);
+}
+
+
+.site-logo-text img {
+    -webkit-filter: blur(3px) hue-rotate(90deg);
+    filter: blur(1px) hue-rotate(90deg);
+}
+
+.region-main img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+figure:nth-of-type(2) {
+    background-color: @color2;
+}
+
+figure:nth-of-type(1) {
+    background-color: @color1;
+}
+
+.route-rapport-fargschema .region-main {
+    img {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    figure {
+        background-color: inherit;
+    }
+}
+
+.region-footer {
+    #design-mixin.linearGradient(@colorBackground, lighten(@colorAccent1, 45%), 180deg);
+    overflow: auto;
+    max-height: 100%;
+}
+
+.author-byline {
+    background-color: @colorBackground;
+    figure {
+        background-color: @color3;
+    }
+}
+
+@colorText: #333;
+@colorBorder: @colorText;
+@colorBackground: #fff;
+@colorContrast: #222;
+
+@colorAccent1: lighten(@colorText, 10%);
+@colorAccent2: darken(@colorText, 10%);
+
+@hborders: @color3;
+
+#design-mixin.hborderBottom(@hborders);
+#design-mixin.siteLogo(darken(@color2, 15%), @colorContrast);
+#design-mixin.code(darken(@colorBackground, 5%), lighten(@hborders, 10%));
+
+// Set font family to use
+@fontFamilyHeadings: "Overlock", sans-serif;
+@fontFamilyBody: "Barlow", sans-serif;
+@fontFamilyCode: monospace;

@@ -1,0 +1,44 @@
+    /*!
+* LESS version of the minimalistic theme stylesheet for design kmom04.
+*
+* This stylesheet is for the design course and kmom04.
+*/
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Fira+Sans');
+@import "kmom04.less";
+
+@colorText: #222;
+@colorBorder: @colorText;
+@colorBackground: #fff;
+@colorContrast: #fff;
+@hborders: yellow;
+
+@colorAccent1: lighten(@colorText, 10%);
+@colorAccent2: darken(@colorText, 10%);
+#design-mixin.siteLogo(@colorAccent2, @colorAccent1);
+
+#design-mixin.code(lighten(@colorContrast, 5%), lighten(@colorText, 10%));
+
+#design-mixin.hborderBottom(@hborders);
+
+.rm-button-face-1 {
+    background-color: @colorContrast;
+}
+
+.region-header {
+    font-family: @fontFamilyHeadings;
+}
+
+img {
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(100%);
+}
+
+.route-rapport-fargschema main img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+// Set font family to use
+@fontFamilyHeadings: "Cabin Sketch", sans-serif;
+@fontFamilyBody: "Fira Sans", sans-serif;
+@fontFamilyCode: monospace;

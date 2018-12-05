@@ -1,9 +1,13 @@
 Revision history
 =================
 
+v4.0.2 (2018-11-30)
+-------------------
+Done with kmom04
+
 v4.0.1 (2018-11-30)
 -------------------
-Added Rapport as new page, fixed responsive 
+Added Rapport as new page, fixed responsive
 
 v3.0.1 (2018-11-29)
 -------------------

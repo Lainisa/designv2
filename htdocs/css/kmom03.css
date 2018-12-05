@@ -22,6 +22,9 @@
  * A small clearfix:
  * http://stackoverflow.com/questions/211383/what-methods-of-clearfix-can-i-use
  */
+#design-mixin .wordBreak {
+  word-break: break-all;
+}
 /**
 * Normalize and reset the style.
 */
@@ -4510,13 +4513,7 @@ template {
   margin-right: 0.52083333%;
   margin-left: 13.02083333%;
 }
-.footer-column-1 {
-  display: inline;
-  float: left;
-  width: 32.29166667%;
-  margin-left: 0.52083333%;
-  margin-right: 0.52083333%;
-}
+.footer-column-1,
 .footer-column-2,
 .footer-column-3 {
   display: inline;
@@ -4528,10 +4525,9 @@ template {
 .site-footer {
   display: inline;
   float: left;
-  width: 23.95833333%;
+  width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  margin-left: 38.02083333%;
 }
 /* sidebar n main layout */
 .region-main {
