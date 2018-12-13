@@ -15,7 +15,7 @@ views:
         sort: 2
         data:
             dateFormat: j F Y
-            meta: 
+            meta:
                 type: toc
                 orderby: publishTime
                 orderorder: desc
@@ -25,12 +25,14 @@ views:
         template: anax/v2/blog-toc/default
         sort: 2
         data:
-            meta: 
+            meta:
                 type: copy
                 view: blog-list
 
 ---
-Nytt och Noterat
+Bildblogg
 ===========================
 
-Kortare blogginlägg om vad som händer på dbwebb.se, kurserna samt webbprogrammering och webbutveckling med HTML, CSS, JavaScript, PHP och SQL i allmänhet.
+En bildblogg som en del av kursmomentet kmom05 ht lp 2018.
+
+Ute är det full vinter i Kläppen, med vita toner och tjock snödimma. Jag behöver lite färg, så därför plockar jag fram mina gamla bilder från torpet i Hedesunda.

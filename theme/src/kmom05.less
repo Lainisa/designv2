@@ -1,10 +1,10 @@
     /*!
-* LESS version of the stylesheet for design kmom04.
+* LESS version of the stylesheet for design kmom05.
 *
-* This stylesheet is for the design course and kmom04.
+* This stylesheet is for the design course and kmom05.
 */
 
-@import url('https://fonts.googleapis.com/css?family=Ubuntu|Catamaran');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Fira+Sans');
 
 /**
 * clearfix
@@ -26,19 +26,30 @@
 /**
  * Import the typographic grid.
  */
-@import "@desinax/typographic-grid/less/typography-font-families.less";
-@import "@desinax/typographic-grid/less/typography-defaults.less";
+ @import "@desinax/typographic-grid/less/typography-font-families.less";
+ @import "@desinax/typographic-grid/less/typography-defaults.less";
+ @import "@desinax/typographic-grid/less/typography-sizes.less";
+ @import "@desinax/typographic-grid/less/typography-mixins.less";
 
 // Show the grid
 .hgrid .inner-wrap {
     @gridImage: "../img/magic-number-@{magicNumber}.png";
     #desinax-hgrid.showGrid(@gridImage);
 }
+
 /**
  * Import the vertical grid.
  */
 @import "@desinax/vertical-grid/less/grid.less";
 @import "layout/vgrid.less";
+
+/**
+ * Figure and figcaption for images and other media using figure/figcaption
+ */
+@import "@desinax/figure/less/asciinema.less";
+@import "@desinax/figure/less/codepen.less";
+@import "@desinax/figure/less/figure.less";
+
 
 
 /**
@@ -56,7 +67,7 @@
 @import "layout/layout5.less";
 
 //@import "module/figures3.less";
-
+@import "module/figures5.less";
 @import "module/breadcrumb3.less";
 @import "module/stylechooser.less";
 @import "module/flashImg.less";
@@ -74,21 +85,39 @@
 * My own settings, not currently in their own module.
 */
 
-@colorText: #333;
+@colorText: #222;
 @colorBorder: @colorText;
 @colorBackground: #fff;
-@hborders: #777;
+@colorContrast: #fff;
+@hborders: yellow;
 
 @colorAccent1: lighten(@colorText, 10%);
 @colorAccent2: darken(@colorText, 10%);
+#design-mixin.siteLogo(@colorAccent2, @colorAccent1);
 
-@colorContrast: lighten(#637f3c, 20%);
+#design-mixin.code(lighten(@colorContrast, 5%), lighten(@colorText, 10%));
 
-@colorLinks:#0000ff;
-@colorVisited: #800080;
-@colorActive: #ff0000;
+#design-mixin.hborderBottom(@hborders);
 
-#design-mixin.code(lighten(@colorText, 60%), lighten(@colorContrast, 10%));
+.rm-button-face-1 {
+    background-color: @colorContrast;
+}
+
+.inner-wrap-header {
+        #design-mixin.linearGradient(@colorBackground, @hborders, 90deg);
+}
+.region-header {
+    font-family: @fontFamilyHeadings;
+}
+
+h1 {
+    #design-mixin.linearGradient(@colorBackground, @hborders, 90deg);
+}
+
+// Set font family to use
+@fontFamilyHeadings: "Cabin Sketch", sans-serif;
+@fontFamilyBody: "Fira Sans", sans-serif;
+@fontFamilyCode: monospace;
 
 // Magic number and base fontsize
 //found in body in base3-file
@@ -101,9 +130,3 @@
 @gutterWidth:   10;
 @columns:       24;
 @gridType:      "float"; // "flex"
-
-
-// Set font family to use
-@fontFamilyHeadings: "Ubuntu", sans-serif;
-@fontFamilyBody: "Catamaran", sans-serif;
-@fontFamilyCode: @fontFamilyCourier;

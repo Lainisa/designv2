@@ -13,7 +13,7 @@
   font-family: 'Overpass Mono';
   font-style: normal;
   font-weight: 400;
-  src: local('Overpass Mono Regular'), local('OverpassMono-Regular'), url(https://fonts.gstatic.com/s/overpassmono/v3/_Xmq-H86tzKDdAPa-KPQZ-AC1i-0sw.ttf) format('truetype');
+  src: local('Overpass Mono Regular'), local('OverpassMono-Regular'), url(https://fonts.gstatic.com/s/overpassmono/v4/_Xmq-H86tzKDdAPa-KPQZ-AC1i-0sw.ttf) format('truetype');
 }
 /*!
 * LESS version of the stylesheet for design kmom04.
@@ -4363,14 +4363,14 @@ template {
  * Typographic font families to choose from.
  */
 /**
+ * Default font-families
+ */
+/**
  * Typographic defaults.
  */
 #desinax-hgrid {
   /**
-     * Mixins used when setting default fonts
-     */
-  /**
-     * Settings for headings H1-H6
+     * Headings
      */
   /**
      * Text elements
@@ -4392,6 +4392,63 @@ template {
      * Enable all default typographic elements.
      */
 }
+/**
+ * Typographic sizes for horisontal rythm.
+ */
+/**
+ * Magic number for vertical rythm
+ * @magicNumber = @fontSizeBody * @lineHeight
+ */
+/* 16px - 100%/1.5 */
+/**
+ * Size and lineheight calculation for magicNumber 24
+ *
+ * 3em     * 16px   = 48 => line-height: 48    = 1
+ * 2.875em * 16px   = 46 => line-height: 48/44 = 1.0435
+ * 2.75em  * 16px   = 44 => line-height: 48/44 = 1.0909
+ * 2.625em * 16px   = 42 => line-height: 48/42 = 1.1429
+ * 2.5em   * 16px   = 40 => line-height: 48/40 = 1.2
+ * 2.375em * 16px   = 38 => line-height: 48/38 = 1.2632
+ * 2.25em  * 16px   = 36 => line-height: 48/36 = 1.3333
+ * 2.125em * 16px   = 34 => line-height: 48/34 = 1.4118
+ * 2em     * 16px   = 32 => line-height: 48/32 = 1.5
+ * 1.875em * 16px   = 30 => line-height: 48/30 = 1.6
+ * 1.75em  * 16px   = 28 => line-height: 48/28 = 1.7143
+ * 1.625em * 16px   = 26 => line-height: 48/26 = 1.8462
+ * 1.5em   * 16px   = 24 => line-height: 24    = 1
+ * 1.375em * 16px   = 22 => line-height: 24/22 = 1.0909
+ * 1.25em  * 16px   = 20 => line-height: 24/20 = 1.2
+ * 1.125em * 16px   = 18 => line-height: 24/18 = 1.3333
+ * 1em     * 16px   = 16 => line-height: 24/16 = 1.5
+ * 0.875em * 16px   = 14 => line-height: 24/14 = 1.7143
+ * 0.75em  * 16px   = 12 => line-height: 24/12 = 2
+ */
+/**
+ * Size and lineheight calculation for magicNumber 22
+ *
+ * 3em     * 16px   = 48 => line-height: 66/48 = 1.375
+ * 2.875em * 16px   = 46 => line-height: 66/46 = 1.4348
+ * 2.75em  * 16px   = 44 => line-height: 44    = 1
+ * 2.625em * 16px   = 42 => line-height: 44/42 = 1.0476
+ * 2.5em   * 16px   = 40 => line-height: 44/40 = 1.1
+ * 2.375em * 16px   = 38 => line-height: 44/38 = 1.1579
+ * 2.25em  * 16px   = 36 => line-height: 44/36 = 1.2222
+ * 2.125em * 16px   = 34 => line-height: 44/34 = 1.2941
+ * 2em     * 16px   = 32 => line-height: 44/32 = 1.375
+ * 1.875em * 16px   = 30 => line-height: 44/30 = 1.4667
+ * 1.75em  * 16px   = 28 => line-height: 44/28 = 1.5714
+ * 1.625em * 16px   = 26 => line-height: 44/26 = 1.6923
+ * 1.5em   * 16px   = 24 => line-height: 44/24 = 1.8333
+ * 1.375em * 16px   = 22 => line-height: 22    = 1
+ * 1.25em  * 16px   = 20 => line-height: 22/20 = 1.1
+ * 1.125em * 16px   = 18 => line-height: 22/18 = 1.2222
+ * 1em     * 16px   = 16 => line-height: 22/16 = 1.375
+ * 0.875em * 16px   = 14 => line-height: 22/14 = 1.5714
+ * 0.75em  * 16px   = 12 => line-height: 22/12 = 1.8333
+*/
+/**
+ * Typographic mixins.
+ */
 .hgrid .inner-wrap {
   background-image: url("../img/magic-number-24px.png");
 }
@@ -4615,6 +4672,12 @@ body {
 * {
   border-collapse: collapse;
 }
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
 h1,
 h2,
 h3,
@@ -4655,6 +4718,7 @@ h2 {
   font-size: 1.875em;
   line-height: 1.42222222;
   font-weight: normal;
+  margin-top: 48px;
   margin-bottom: 23px;
   border-bottom: 1px solid #CCC;
 }
@@ -4662,41 +4726,28 @@ h2 + h3 {
   margin-top: 24px;
 }
 h3 {
-  font-size: 1.75em;
-  line-height: 1.52380952;
+  font-size: 1.375em;
+  line-height: 1.93939394;
   font-weight: normal;
+  margin-top: 48px;
   margin-bottom: 23px;
   border-bottom: 1px solid #EEE;
-}
-h3 + h4 {
-  margin-top: 24px;
 }
 h4 {
-  font-size: 1.5em;
-  line-height: 1.77777778;
+  font-size: 1.25em;
+  line-height: 1.06666667;
   font-weight: normal;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h4 + h5 {
-  margin-top: 24px;
 }
 h5 {
-  font-size: 1.25em;
-  line-height: 1.06666667;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
-}
-h5 + h6 {
-  margin-top: 24px;
+  font-size: 1em;
+  line-height: 1.33333333;
 }
 h6 {
-  font-size: 1.25em;
-  line-height: 1.06666667;
-  margin-bottom: 23px;
-  border-bottom: 1px solid #EEE;
+  font-size: 0.875em;
+  line-height: 1.52380952;
 }
 p {
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 small,
@@ -4745,13 +4796,12 @@ code,
 kbd,
 samp,
 .code {
+  font-size: 1.25em;
   font-family: monospace;
 }
 code,
 samp {
   border: 1px solid #ccc;
-  padding-left: 1px;
-  padding-right: 1px;
 }
 code {
   background-color: #eee;
@@ -4759,11 +4809,12 @@ code {
 pre,
 div.code,
 pre code {
-  font-size: 1em;
-  line-height: 1.5;
+  font-size: 1.25em;
+  line-height: 1.6;
   white-space: pre;
 }
 pre {
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 pre code {
@@ -4774,6 +4825,7 @@ div.code,
 pre code {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  margin-top: 23px;
   margin-bottom: 23px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -4782,6 +4834,7 @@ pre code {
 }
 ul,
 ol {
+  margin-top: 24px;
   margin-bottom: 24px;
   padding-left: 1.5em;
 }
@@ -4803,6 +4856,7 @@ ol {
   list-style-type: decimal;
 }
 dl {
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 dl.horizontal dt {
@@ -4821,6 +4875,7 @@ article table,
 .table,
 .table1,
 .table2 {
+  margin-top: 24px;
   margin-bottom: 24px;
 }
 table.full-width,

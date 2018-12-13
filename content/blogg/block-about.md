@@ -1,3 +1,6 @@
 #### Nytt och Noterat
 
-Kortare blogginlägg om vad som händer på dbwebb.se, kurserna samt webbprogrammering och webbutveckling med HTML, CSS, JavaScript, PHP och SQL i allmänhet.
+
+En bildblogg som en del av kursmomentet kmom05 ht lp2 2018.
+
+Ute är det full vinter i Kläppen, med vita toner och tjock snödimma. Jag behöver lite färg, så därför plockar jag fram mina gamla bilder från torpet i Hedesunda.

@@ -56,7 +56,7 @@ Storleken på sidorna är mellan 273kb till 345kb och laddningstiden mellan 0,98
 Skidåkningssidan är den som är tyngst att ladda men också har flest requests.
 
 ###Branäs
-[FIGURE src=image/romme.jpg?width=100% alt="Romme Alpin startsida" caption="Romme Alpin startsida"]
+[FIGURE src=image/branas.jpg?width=100% alt="Branäs startsida" caption="Branäs startsida"]
 
 PageSpeed data ligger på 51 för datorn och 50 för mobilen, vilket anses vara relativt bra. De åtgärder som föreslås från PageSpeed är att skicka bilder i modernare filformat samt koda bilder mer effektivt och använda bilder med rätt storlek.
 
@@ -72,22 +72,23 @@ PageSpeed gillar inte kläppens hemsida. Det är många requester och det tar ti
 Tittar man på antalet bilder av de requests som skickas, så är mat och nöje den sidan som har flest requests av bilder.
 Genomgående är det toppbilderna, de som ligger som flashbilder som väger mest.
 
+Kläppen har förbättringsmöjligheter. Det som tar mest tid att ladda är oftast flashbilden, som också är störst storleksmässigt sett.
+
 ###Romme Alpin
 Det här är en snabb webbsida, genomgående i alla kategorier.
 Man kan förbättra resultatet genom att skicka bilderna i modernare bildformat, men med tanke på hur snabba sidorna är så är det inte nödvändigt.
+
 Det är relativit mediatäta sidor, men bilderna är små i storleken och de flesta ligger under 50kb. Däremot är bilderna grynigare, de har inte samma skärpa som kläppen.
+
+Kanske hade de vunnit lite på att behålla flashbilden i bättre format. Men Romme är de som är snabbast på laddningen och som kräver minst resurser.
 
 ###Branäs
 PageSpeed är relativt OK, men sidorna skulle vinna på att skicka bilderna i modernare format och koda bilder bättre.  Det är överlag stora bilder med storlek över 100kb på restaurang-sidan. Sidan ligger mellan trög och snabb, och är hanterbar i laddningstid.
 
+Branäs sida har en annan layout än de andra sidorna, där jag har fått använda länkar i underkategorier som avläsningspunkt. Huruvida detta har påverkat laddningstiden eller inte kan jag inte avgöra.
+
 Sammanfattning
 --
-Kläppen har förbättringsmöjligheter. Genom att skicka bilderna i bättre bildformat så skulle de minska laddningstiden. Det som tar mest tid att ladda är oftast flashbilden, som också är störst storleksmässigt sett.
-
-Romme Alpin har grynigare bilder, de har inte samma skärpa som Kläppens bilder. Och kanske hade de vunnit lite på att behålla flashbilden i bättre format. Men Romme är de som är snabbast på laddningen och som kräver minst resurser.
-
-Branäs sida skulle vinna på att koda bilderna bättre, och skicka i modernare bildformat. Branäs sida har en annan layout än de andra sidorna, där jag har fått använda länkar i underkategorier som avläsningspunkt. Huruvida detta har påverkat laddningstiden eller inte kan jag inte avgöra.
-
 Alla skulle bli bättre genom att skicka upp bilderna i ett mer modernt bildformat, koda bilder mer effektivt samt skicka bilder med rätt storlek.
 
 Den sida som genomgående gjort bäst i analysen är Romme Alpin, men de har också sämst upplösning på vissa bilder. De saknar skärpa, men tekniskt sett är de klart bäst av de tre.
