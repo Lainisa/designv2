@@ -1,6 +1,9 @@
 Revision history
 =================
 
+v5.0.2 (2018-12-13)
+Done with kmom05
+
 v5.0.1 (2018-12-12)
 Updates from dbwebb
 
