@@ -38,7 +38,7 @@ Resultat
 I resultatet är alla siffror i genomsnitt, om inget annat anges.
 
 ###Kläppen
-[FIGURE src=image/klappen.jpg?width=100% alt="Kläppen ski Resort startsida" caption="Kläppen ski Resort startsida"]
+[FIGURE src=image/klappen.jpg?width=100%&crop-to-fit alt="Kläppen ski Resort startsida" caption="Kläppen ski Resort startsida"]
 
 PageSpeed data ligger på 22 för datorn och 21 för mobilen, vilket anses vara lågt. De åtgärder som föreslås från PageSpeed och som påverkar bilder mest är att använda bilder i rätt storleksformat samt att skicka bilder i modernare filformat.
 
@@ -47,7 +47,7 @@ Storleken på sidorna är mellan 1,9mb till 2,7mb och laddningstiden mellan 4,2s
 Skidåkningssidan är den som är tyngst att ladda men också har flest requests.
 
 ###Romme Alpin
-[FIGURE src=image/romme.jpg?width=100% alt="Romme Alpin startsida" caption="Romme Alpin startsida"]
+[FIGURE src=image/romme.jpg?width=100%&crop-to-fit alt="Romme Alpin startsida" caption="Romme Alpin startsida"]
 
 PageSpeed data ligger på 99 för datorn och 97 för mobilen, vilket anses vara riktigt bra. De åtgärder som föreslås från PageSpeed är att skicka bilder i modernare filformat.
 
@@ -56,7 +56,7 @@ Storleken på sidorna är mellan 273kb till 345kb och laddningstiden mellan 0,98
 Skidåkningssidan är den som är tyngst att ladda men också har flest requests.
 
 ###Branäs
-[FIGURE src=image/branas.jpg?width=100% alt="Branäs startsida" caption="Branäs startsida"]
+[FIGURE src=image/branas.jpg?width=100%&crop-to-fit alt="Branäs startsida" caption="Branäs startsida"]
 
 PageSpeed data ligger på 51 för datorn och 50 för mobilen, vilket anses vara relativt bra. De åtgärder som föreslås från PageSpeed är att skicka bilder i modernare filformat samt koda bilder mer effektivt och använda bilder med rätt storlek.
 
