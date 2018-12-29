@@ -1,0 +1,92 @@
+    /*!
+* LESS version of stylesheet for kmom06 designprinciper.
+*
+*
+* This stylesheet is for the design course and kmom06.
+*/
+
+@import "kmom05.less";
+@import "layout/layout6.less";
+
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Fira+Sans');
+
+@colorText: #222;
+@colorBorder: @colorText;
+@colorBackground: #fff;
+@colorContrast: #fff;
+@hborders: yellow;
+
+@colorLinks: @colorText;
+@colorVisited: none;
+@colorActive: none;
+
+@colorAccent1: lighten(@colorText, 10%);
+@colorAccent2: darken(@colorText, 10%);
+#design-mixin.siteLogo(@colorAccent2, @colorAccent1);
+
+#design-mixin.code(lighten(@colorContrast, 5%), lighten(@colorText, 10%));
+
+#design-mixin.hborderBottom(@hborders);
+
+.rm-button-face-1 {
+    background-color: @colorContrast;
+}
+
+.region-header {
+    font-family: @fontFamilyHeadings;
+}
+
+img {
+    -webkit-filter: grayscale(95%);
+    filter: grayscale(100%);
+}
+
+.route-rapport-fargschema main,
+.route-rapport-laddningstid main,
+.route-rapport-designprincip main,
+.route-rapport-designelement main,
+.route-rapport-designprinciper main
+.route-rapport-fargschema main {
+    img {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
+
+code {
+    font-size: 1em;
+}
+
+.inner-wrap-footer,
+.inner-wrap-header,
+h1 {
+        #design-mixin.linearGradient(@colorBackground, @hborders, 90deg);
+        text-shadow: -2px -2px 2px rgba(255,255,255,0.1), 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+.region-header-col-2 >div >ul >li >a {
+    border: 3px #555 solid;
+
+    &:hover {
+        border-radius: 50%;
+        border: 3px #555 double;
+        text-decoration: none;
+    }
+}
+
+.region-flash {
+    animation: 3s slidein;
+}
+
+@keyframes slidein {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+
+
+
+// Set font family to use
+@fontFamilyHeadings: "Bungee Inline", sans-serif;
+@fontFamilyBody: "Fira Sans", sans-serif;
+@fontFamilyCode: monospace;

@@ -5542,12 +5542,6 @@ h6 {
 .rm-button-face-1 {
   background-color: #fff;
 }
-.inner-wrap-header {
-  background: #fff;
-  background: -moz-linear-gradient(90deg, #fff 0%, #ffffff 35%, yellow 100%);
-  background: -webkit-linear-gradient(90deg, #fff 0%, #ffffff, yellow 100%);
-  background: linear-gradient(90deg, #fff 0%, #ffffff 35%, yellow 100%);
-}
 .region-header {
   font-family: "Cabin Sketch", sans-serif;
 }
