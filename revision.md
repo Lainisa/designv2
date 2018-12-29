@@ -1,6 +1,10 @@
 Revision history
 =================
 
+
+v6.0.1 (2018-12-29)
+Added link to kmom06
+
 v6.0.0 (2018-12-29)
 Done with kmom06
 
