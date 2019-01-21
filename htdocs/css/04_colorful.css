@@ -7,13 +7,13 @@
   font-family: 'Barlow';
   font-style: normal;
   font-weight: 400;
-  src: local('Barlow Regular'), local('Barlow-Regular'), url(https://fonts.gstatic.com/s/barlow/v2/7cHpv4kjgoGqM7E_DMs8.ttf) format('truetype');
+  src: local('Barlow Regular'), local('Barlow-Regular'), url(https://fonts.gstatic.com/s/barlow/v3/7cHpv4kjgoGqM7E_DMs8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Overlock';
   font-style: normal;
   font-weight: 400;
-  src: local('Overlock Regular'), local('Overlock-Regular'), url(https://fonts.gstatic.com/s/overlock/v7/Z9XVDmdMWRiN1_T9Z7TZ6Ok.ttf) format('truetype');
+  src: local('Overlock Regular'), local('Overlock-Regular'), url(https://fonts.gstatic.com/s/overlock/v8/Z9XVDmdMWRiN1_T9Z7TZ6Ok.ttf) format('truetype');
 }
 /*!
 * LESS version of the stylesheet for design kmom04.

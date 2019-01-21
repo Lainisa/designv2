@@ -13,7 +13,7 @@
   font-family: 'Cabin Sketch';
   font-style: normal;
   font-weight: 400;
-  src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://fonts.gstatic.com/s/cabinsketch/v11/QGYpz_kZZAGCONcK2A4bGOj8mNhI.ttf) format('truetype');
+  src: local('Cabin Sketch Regular'), local('CabinSketch-Regular'), url(https://fonts.gstatic.com/s/cabinsketch/v12/QGYpz_kZZAGCONcK2A4bGOj8mNhI.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Fira Sans';
@@ -5618,7 +5618,7 @@ a:active {
   font-family: 'Bungee Inline';
   font-style: normal;
   font-weight: 400;
-  src: local('Bungee Inline'), local('BungeeInline-Regular'), url(https://fonts.gstatic.com/s/bungeeinline/v3/Gg8zN58UcgnlCweMrih332VuPGV__A.ttf) format('truetype');
+  src: local('Bungee Inline'), local('BungeeInline-Regular'), url(https://fonts.gstatic.com/s/bungeeinline/v4/Gg8zN58UcgnlCweMrih332VuPGV__A.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Fira Sans';
